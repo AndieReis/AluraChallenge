@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador Allura</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logoAlura" src="./Imagens/logoAlura.png" alt="Logotipo da Alura"></a>
+    </header>
+    <main>
+        <section>
+            <textarea class="text-area" cols="41" rows="4" placeholder="Digite seu texto:"></textarea>
+            <div class="informacao">
+                <h6>Apenas letras minúsculas e sem acentos.</h6>
+            </div>
+
+            <div class="botoes">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Descriptografar</button>               
+            </div>
+        </section>
+
+        <section class="resultado">
+            <textarea class="mensagem" id="displayNone" cols="20" rows="10"></textarea>
+            <h6>Sua mensagem será exibida aqui.</h6>
+            <span>Digite o texto que deseja criptografar/descriptografar.</span>
+            <button class="btn-copiar" onclick="copiarTexto()" >Copiar</button>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="icones">
+            <a href="http://www.linkedin.com/in/andresa-reis-fernandes/"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="https://github.com/AndieReis"><ion-icon name="logo-github"></ion-icon></a>
+        </div>
+        <p>Desenvolvido por  ♾ Andie Reis &copy Copyright 2023.</p>
+        <p>Challenge Alura: Decodificador de texto - T4 ONE</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>
